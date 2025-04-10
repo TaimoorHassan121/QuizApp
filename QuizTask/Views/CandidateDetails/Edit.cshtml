@@ -1,0 +1,187 @@
+﻿@model QuizTask.Models.CandidateDetail
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "_LayoutAdmin";
+}
+
+<div class="content-header row">
+    <div class="content-header-left col-12 mb-2 mt-1">
+        <div class="breadcrumbs-top">
+            <h5 class="content-header-title float-left pr-1 mb-0">Candidate</h5>
+            <div class="breadcrumb-wrapper d-none d-sm-block">
+                <ol class="breadcrumb p-0 mb-0 pl-1">
+                    <li class="breadcrumb-item">
+                        <a href="index"><i class="bx bx-home-alt"></i></a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="index">Index</a>
+                    </li>
+                    <li class="breadcrumb-item active">
+                        <a>Update</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="content-body">
+    <!-- Basic Vertical form layout section start -->
+    <section id="basic-vertical-layouts">
+        <div class="row match-height">
+
+            <div class="col-md-12 col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h5>Update Candidate</h5>
+                    </div>
+                    <div class="card-body">
+                        <form asp-action="Edit" method="post" enctype="multipart/form-data">
+                            <input type="hidden" asp-for="IdentityUserId" />
+                            <input type="hidden" asp-for="CandidateID" />
+                            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                            <div class="row col-12">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label asp-for="Name" class="control-label"></label>
+                                        <input asp-for="Name" class="form-control" />
+                                        <span asp-validation-for="Name" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="control-label">Career Level</label>
+                                        <select asp-for="LevelID" class=" select2 form-control" asp-items="@ViewBag.LevelID"></select>
+                                        <span asp-validation-for="LevelID" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="control-label"> Email</label>
+                                        <input asp-for="Candidate_Email" class="form-control" id="emailAddress" />
+                                        <span asp-validation-for="Candidate_Email" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label asp-for="Mobile_No" class="control-label"></label>
+                                        <input asp-for="Mobile_No" class="form-control" id="mobileNo" maxlength="12" />
+                                        <span asp-validation-for="Mobile_No" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="control-label">
+                                            Gender
+                                        </label>
+                                        <select asp-for="Gender" class="form-control">
+                                            <option value="Male">Male</option>
+                                            <option value="Female">Female</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <fieldset class="form-group">
+                                        <label>Profile Pic</label>
+                                        <div class="custom-file">
+                                            <input asp-for="Pic" type="file" name="profilepic" class="custom-file-input" id="inputGroupFile01"
+                                                   onchange="document.getElementById('FrontImage').src=window.URL.createObjectURL(this.files[0])" />
+                                            <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                                        </div>
+                                        <span asp-validation-for="Pic" class="text-danger"></span>
+                                        <img id="FrontImage" src="~/Images/@Model.Pic" alt="Employee Image" width="150" height="150"
+                                             style="border:1px;margin-top:-10px;margin-left:120px;" />
+                                    </fieldset>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="control-label">
+                                            Status
+                                        </label>
+                                        <select asp-for="Status" class="form-control">
+                                            <option value="">Select Status</option>
+                                            <option value="Pending">Test Pending</option>
+                                            <option value="LinkCreate">Link Create</option>
+                                            <option value="Complete">Test Complete</option>
+                                            <option value="Expire">Test Expire</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="control-label">
+                                                Status
+                                            </label>
+                                            <select asp-for="IsActive" class="form-control">
+                                                <option value="True">True</option>
+                                                <option value="False">False</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                            </div>
+
+
+                            <div class="form-group">
+                                <input type="submit" value="Update" class="btn btn-primary" />
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Basic Vertical form layout section end -->
+
+
+
+</div>
+
+
+<script src="~/js/currentdatetime.js"></script>
+<script type="text/javascript">
+    document.querySelector('.custom-file-input').addEventListener('change', function (e) {
+        var fileName = document.getElementById("inputGroupFile01").files[0].name;
+        var nextSibling = e.target.nextElementSibling
+        nextSibling.innerText = fileName;
+    })
+
+
+
+      const mobileInput = document.getElementById("mobileNo");
+
+         mobileInput.addEventListener("input", function () {
+        let value = mobileInput.value.replace(/\D/g, ""); // Remove non-numeric characters
+
+        // Ensure it starts with '03'
+        if (!value.startsWith("03")) {
+            value = "03";
+        }
+        // Apply formatting: 03XX-XXXXXXX
+        if (value.length > 4) value = value.slice(0, 4) + "-" + value.slice(4);
+        if (value.length > 12) value = value.slice(0, 12); // Max length: 12 (11 digits + 1 dash)
+
+        mobileInput.value = value;
+        });
+
+
+
+             function validateEmail(email) {
+            return /^[a-zA-Z0-9._%+-]+@@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(email);
+        }
+
+         const emailInput = document.getElementById("emailAddress");
+
+            emailInput.addEventListener("input", function () {
+                if (!validateEmail(this.value)) {
+                    this.style.border = "2px solid red";
+                } else {
+                    this.style.border = "2px solid green";
+                }
+            });
+
+
+</script>
+
+
+
+

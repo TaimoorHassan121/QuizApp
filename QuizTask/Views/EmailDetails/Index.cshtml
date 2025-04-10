@@ -1,0 +1,68 @@
+﻿@model IEnumerable<QuizTask.Models.EmailDetail>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "_LayoutAdmin";
+}
+
+<div class="content-body">
+    <!-- Zero configuration table -->
+    <section id="basic-datatable">
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h5>Careel Level List</h5>
+                        <a style="float:right" class="btn btn-primary" asp-action="Create">
+                            <i class="bx bx-plus-medical"></i>
+                        </a>
+                    </div>
+                    <div class="card-body card-dashboard">
+
+                        <div class="table-responsive">
+                            <table class="table zero-configuration">
+                                <thead>
+                                    <tr>
+                                        <th>TestLink</th>
+                                        <th>Confirmed Email</th>
+                                        <th>Subject</th>
+                                        <th>Body</th>
+                                        <th>Date</th>
+                                        <th>Created By</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var item in Model)
+                                    {
+                                        <tr>
+                                            <td>@item.TestLinkId</td>
+                                            <td>@item.Confirmed_Email</td>
+                                            <td>@item.Subject</td>
+                                            <td>@item.body</td>
+                                            <td>@item.Created_Date</td>
+                                            <td>@item.Created_By</td>
+
+
+                                            <td>
+                                                @* <a asp-action="Edit" class="btn btn-success  btn-sm" asp-route-id="@item.EmailID">Edit</a> *@
+                                                <a asp-action="Details" class="btn btn-info  btn-sm" asp-route-id="@item.EmailID">Details</a>
+                                                <a asp-action="Delete" class="btn btn-danger btn-sm" asp-route-id="@item.EmailID">Delete</a>
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/ Zero configuration table -->
+
+</div>
+
+
+

@@ -1,0 +1,69 @@
+﻿@model IEnumerable<QuizTask.Models.CareerLevel>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "_LayoutAdmin";
+}
+
+<div class="content-body">
+    <!-- Zero configuration table -->
+    <section id="basic-datatable">
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h5>Careel Level List</h5>
+                        <a style="float:right" class="btn btn-primary" asp-action="Create">
+                            <i class="bx bx-plus-medical"></i>
+                        </a>
+                    </div>
+                    <div class="card-body card-dashboard">
+
+                        <div class="table-responsive">
+                            <table class="table zero-configuration">
+                                <thead>
+                                    <tr>
+                                        <th>Career Level Name</th>
+                                        <th>Status</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var item in Model)
+                                    {
+                                        <tr>
+                                            <td>@item.CareerName</td>
+
+                                            <td>
+                                                @if (item.isActive == true)
+                                                {
+                                                    @Html.Raw("Active")
+                                                }
+                                                else
+                                                {
+                                                    @Html.Raw("Deactive")
+                                                }
+                                            </td>
+
+                                            <td>
+                                                <a asp-action="Edit" class="btn btn-success  btn-sm" asp-route-id="@item.LevelID">Edit</a>
+                                                <a asp-action="Details" class="btn btn-info  btn-sm" asp-route-id="@item.LevelID">Details</a>
+                                                <a asp-action="Delete" class="btn btn-danger btn-sm" asp-route-id="@item.LevelID">Delete</a>
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/ Zero configuration table -->
+
+</div>
+
+
+

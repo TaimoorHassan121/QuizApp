@@ -1,0 +1,505 @@
+@import url('https://fonts.cdnfonts.com/css/satoshi');
+
+*{
+    font-family: 'Satoshi', sans-serif;
+}
+.main-navbar{
+    box-shadow: 0px 20px 50px #00000014;
+    border: 1px solid #70707029;
+    border-radius: 24px;
+    padding-left: 30px;
+    width: 87%;
+    padding-right: 30px;
+    margin: 30px auto;
+    background-color: white;
+}
+.main-navbar .nav{
+    width: 100%;
+}
+.main-navbar .navbar-nav .nav-link{
+    color: #202E61 !important;
+}
+.main-navbar .navbar-nav .nav-link:hover{
+    color: #A8892F !important;
+}
+.main-navbar .navbar-nav .nav-link.active::after{
+    content: '';
+    display: block;
+    width: 35%;
+    padding-top: 5px;
+    border-bottom: 2px solid #A8892F;
+}
+.main-navbar .navbar-nav .nav-link.active{
+    color: #A8892F !important;
+}
+.main-navbar .navbar-nav .nav-link.active::after{
+    content: '';
+    display: block;
+    width: 35px;
+    padding-top: 5px;
+    border-bottom: 2px solid #A8892F;
+}
+.nav{
+    position: relative;
+}
+.navbar-ul::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    height: 5px;
+    margin-bottom: -10px;
+    /* margin-left: 44px; */
+    /* margin-right: 44px; */
+    border-radius: 3px;
+    background: transparent linear-gradient(90deg, #FBC62A 0%, #213889 33%, #FBC62A 71%, #213889 100%) 0% 0% no-repeat padding-box;
+}
+/* @media only screen and (min-width:1821px){
+    .navbar-ul::after{
+        width: 102.5%;
+    }
+} */
+/* @media only screen and (min-width:1658px){
+    .navbar-ul::after{
+        width: 102.5%;
+    }
+} */
+@media only screen and (max-width:991px){
+    .main-navbar .nav{
+        padding-bottom: 0px !important;
+    }
+}
+.main-navbar .nav-login-btn{
+    border-radius: 10px;
+    background-color: #202E61;
+    border: none;
+    color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 400;
+}
+.main-navbar .nav-login-btn:hover{
+    color: white;
+}
+.main-navbar .navbar-nav .nav-item{
+    padding-left: 10px;
+}
+.main-navbar .navbar-nav{
+    padding-right: 25px;
+}
+
+@media only screen and (max-width:1291px){
+    /* .main-navbar .navbar-nav .nav-item{
+        padding-left: 5px;
+    } */
+    .main-navbar .nav-link,
+    .main-navbar .nav-login-btn{
+        font-size: 15px;
+    }
+}
+.main-navbar .navbar-nav .nav-item{
+    padding-right: 0px !important;
+}
+@media only screen and (max-width:1225px){
+    .main-navbar .navbar-nav .nav-item{
+        padding-left: 5px;
+    }
+    .main-navbar .nav-link,
+    .main-navbar .nav-login-btn{
+        font-size: 15px;
+    }
+}
+@media only screen and (max-width:1159px){
+    .main-navbar .navbar-nav .nav-item{
+        padding-left: 0px;
+    }
+    .main-navbar .nav-link,
+    .main-navbar .nav-login-btn{
+        font-size: 14px;
+    }
+}
+@media only screen and (max-width:1199px){
+    .main-navbar .navbar-nav .nav-item{
+        padding-left: 0px;
+    }
+    .main-navbar .nav-link,
+    .main-navbar .nav-login-btn{
+        font-size: 14px;
+    }
+}
+@media only screen and (max-width:1065px){
+    .main-navbar .navbar-nav .nav-item{
+        padding-left: 0px;
+    }
+    .main-navbar .nav-link,
+    .main-navbar .nav-login-btn{
+        font-size: 13px;
+    }
+}
+@media only screen and (max-width:991px){
+    .main-navbar .nav{
+        padding-bottom: 10px;
+    }
+    .main-navbar .nav-link,
+    .main-navbar .nav-login-btn{
+        font-size: 15px;
+    }
+}
+.main-navbar{
+    box-shadow: 0px 20px 50px #00000014;
+    border-radius: 24px;
+    padding-left: 30px;
+    width: 87%;
+    padding-right: 30px;
+    margin: 30px auto;
+    background-color: white;
+}
+.main-navbar .nav{
+    width: 100%;
+}
+.main-navbar .navbar-nav .nav-link{
+    color: #202E61 !important;
+}
+.main-navbar .navbar-nav .nav-link:hover{
+    color: #A8892F !important;
+}
+.main-navbar .navbar-nav .nav-link.active::after{
+    content: '';
+    display: block;
+    width: 35%;
+    padding-top: 5px;
+    border-bottom: 2px solid #A8892F;
+}
+.main-navbar .navbar-nav .nav-link.active{
+    color: #A8892F !important;
+}
+.main-navbar .navbar-nav .nav-link.active::after{
+    content: '';
+    display: block;
+    width: 35px;
+    padding-top: 5px;
+    border-bottom: 2px solid #A8892F;
+}
+/* .main-navbar::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 93%;
+    left: 0;
+    height: 5px;
+    margin-left: 44px;
+    margin-right: 44px;
+    border-radius: 3px;
+    background: transparent linear-gradient(90deg, #FBC62A 0%, #213889 33%, #FBC62A 71%, #213889 100%) 0% 0% no-repeat padding-box;
+} */
+.main-navbar .nav-login-btn{
+    border-radius: 10px;
+    background-color: #202E61;
+    border: none;
+    color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 400;
+}
+.main-navbar .nav-login-btn:hover{
+    color: white;
+}
+.main-navbar .navbar-nav .nav-item{
+    padding-right: 30px;
+}
+/* 
+@media only screen and (max-width:1399px){
+    .main-navbar::after{
+        width: 92.5%;
+    }
+}
+@media only screen and (max-width:1299px){
+    .main-navbar::after{
+        width: 92%;
+    }
+}
+@media only screen and (max-width:1199px){
+    .main-navbar::after{
+        width: 91.5%;
+    }
+}
+@media only screen and (max-width:1150px){
+    .main-navbar::after{
+        width: 91%;
+    }
+}
+@media only screen and (max-width:1050px){
+    .main-navbar::after{
+        width: 90%;
+    }
+}
+@media only screen and (max-width:950px){
+    .main-navbar::after{
+        width: 89%;
+    }
+}
+@media only screen and (max-width:850px){
+    .main-navbar::after{
+        width: 88%;
+    }
+}
+@media only screen and (max-width:800px){
+    .main-navbar::after{
+        width: 87%;
+    }
+}
+@media only screen and (max-width:720px){
+    .main-navbar::after{
+        width: 86%;
+    }
+}
+@media only screen and (max-width:650px){
+    .main-navbar::after{
+        width: 84.5%;
+    }
+}
+@media only screen and (max-width:580px){
+    .main-navbar::after{
+        width: 82%;
+    }
+}
+@media only screen and (max-width:500px){
+    .main-navbar::after{
+        width: 79%;
+    }
+}
+@media only screen and (max-width:430px){
+    .main-navbar::after{
+        width: 76%;
+    }
+}
+@media only screen and (max-width:375px){
+    .main-navbar::after{
+        width: 74%;
+    }
+}
+@media only screen and (max-width:350px){
+    .main-navbar::after{
+        width: 70%;
+    }
+}
+@media only screen and (min-width:1460px){
+    .main-navbar::after{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 93.4%;
+        height: 5px;
+        margin-left: 44px;
+        margin-right: 35px;
+        border-radius: 3px;
+        background: transparent linear-gradient(90deg, #FBC62A 0%, #213889 33%, #FBC62A 71%, #213889 100%) 0% 0% no-repeat padding-box;
+    }
+}
+@media only screen and (min-width:1534px){
+    .main-navbar::after{
+        width: 93.5%;
+    }
+}
+@media only screen and (min-width:1600px){
+    .main-navbar::after{
+        width: 93.8%;
+    }
+}
+@media only screen and (min-width:1650px){
+    .main-navbar::after{
+        width: 94%;
+    }
+}
+@media only screen and (min-width:1720px){
+    .main-navbar::after{
+        width: 94.3%;
+    }
+}
+@media only screen and (min-width:1800px){
+    .main-navbar::after{
+        width: 94.5%;
+    }
+}
+@media only screen and (min-width:1900px){
+    .main-navbar::after{
+        width: 94.8%;
+    }
+}
+@media only screen and (min-width:2050px){
+    .main-navbar::after{
+        width: 95.3%;
+    }
+}
+@media only screen and (min-width:2200px){
+    .main-navbar::after{
+        width: 95.6%;
+    }
+}
+@media only screen and (min-width:2300px){
+    .main-navbar::after{
+        width: 95.8%;
+    }
+}
+@media only screen and (min-width:2500px){
+    .main-navbar::after{
+        width: 96%;
+    }
+}
+@media only screen and (min-width:2700px){
+    .main-navbar::after{
+        width: 96.5%;
+    }
+}
+@media only screen and (min-width:3100px){
+    .main-navbar::after{
+        width: 96.8%;
+    }
+} */
+/* @media only screen and (max-width:1820px){
+    .main-navbar .navbar-nav .nav-item{
+        padding-right: 20px;
+    }
+} */
+/* @media only screen and (max-width:1717px){
+    .main-navbar .navbar-nav .nav-item{
+        padding-right: 10px;
+    }
+} */
+
+@media only screen and (min-width:1656px){
+    .main-navbar .nav-link,
+    .main-navbar .nav-login-btn{
+        font-size: 20px;
+    }
+}
+@media only screen and (min-width:1656px){
+    .main-navbar .nav-link,
+    .main-navbar .nav-login-btn{
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width:1436px){
+    .main-navbar .navbar-nav .nav-item{
+        padding-right: 0px;
+    }
+}
+@media only screen and (min-width:1568px) and (max-width:1657px){
+    .main-navbar .nav-link,
+    .main-navbar .nav-login-btn{
+        font-size: 18px;
+    }
+}
+@media only screen and (max-width:1360px){
+    .main-navbar .navbar-nav .nav-item{
+        padding-left: 0px;
+    }
+}
+@media only screen and (max-width:1291px){
+    .main-navbar .navbar-nav .nav-item{
+        padding-left: 0px;
+    }
+    .main-navbar .nav-link,
+    .main-navbar .nav-login-btn{
+        font-size: 15px;
+    }
+}
+@media only screen and (max-width:1230px){
+    .main-navbar .nav-link,
+    .main-navbar .nav-login-btn{
+        font-size: 15px;
+    }
+}
+@media only screen and (max-width:1225px){
+    .main-navbar .nav-link,
+    .main-navbar .nav-login-btn{
+        font-size: 15px;
+    }
+}
+@media only screen and (max-width:1215px){
+    .main-navbar .nav-link,
+    .main-navbar .nav-login-btn{
+        font-size: 14px;
+    }
+}
+@media only screen and (max-width:1168px){
+    .main-navbar .navbar-nav .nav-item{
+        padding-left: 0px;
+    }
+    .main-navbar .nav-link,
+    .main-navbar .nav-login-btn{
+        font-size: 13px;
+    }
+    .main-navbar .navbar-nav{
+        padding-right: 0px;
+    }
+}
+@media only screen and (max-width:1199px){
+    .main-navbar .navbar-nav .nav-item{
+        padding-left: 0px;
+    }
+    .main-navbar .nav-link,
+    .main-navbar .nav-login-btn{
+        font-size: 14px;
+    }
+}
+@media only screen and (max-width:1139px){
+    .main-navbar .navbar-nav .nav-item{
+        padding-left: 0px;
+    }
+    .main-navbar .nav-link,
+    .main-navbar .nav-login-btn{
+        font-size: 13px;
+    }
+    .main-navbar .navbar-nav{
+        padding-right: 0px;
+    }
+}
+@media only screen and (max-width:1025px){
+    .main-navbar .nav-link{
+        font-size: 12px !important;
+    }
+}
+@media only screen and (max-width:1065px){
+    .main-navbar .navbar-nav .nav-item{
+        padding-left: 0px;
+    }
+    .main-navbar .nav-link,
+    .main-navbar .nav-login-btn{
+        font-size: 13px;
+    }
+}
+@media only screen and (max-width:991px){
+    .main-navbar .nav{
+        padding-bottom: 10px;
+    }
+    .main-navbar .nav-link,
+    .main-navbar .nav-login-btn{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 1069px){
+    .main-navbar .navbar-brand img{
+        width: 100px!important;
+    }
+}
+@media (max-width: 1024px){
+    .main-navbar .navbar-brand img{
+        width: 80px!important;
+    }
+}
+
+
+@media only screen and (min-width:1900px)
+{
+    .container{
+        max-width: 1600px !important;
+    }
+}

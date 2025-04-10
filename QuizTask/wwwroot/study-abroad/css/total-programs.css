@@ -1,0 +1,643 @@
+/* Google Fonts */
+@font-face {
+    font-family: Satoshi-Regular;
+    src: url(../fonts/Satoshi-Regular.otf);
+}
+@font-face {
+    font-family: Satoshi-Bold;
+    src: url(../fonts/Satoshi-Bold.otf);
+}
+@font-face {
+    font-family: Satoshi-Black;
+    src: url(../fonts/Satoshi-Black.otf);
+}
+@font-face {
+    font-family: Satoshi-Medium;
+    src: url(../fonts/Satoshi-Medium.otf);
+}
+*
+{
+    margin: 0;
+    padding: 0;
+}
+/* Header Section 2 */
+.program-header-section-2
+{
+    background-image: url(../img/t-level-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    margin-bottom: 51px;
+}
+.program-header-section-2 .container
+{
+    width: 100%;
+    height: 495px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+#header-content
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-bottom: 20px;
+}
+.header-heading
+{
+    font-family: Satoshi-Bold;
+    color: #213889;
+    font-size: 56px;
+}
+.header-text
+{
+    font-family: Satoshi-Medium;
+    font-size: 28px;
+    color: #818181;
+}
+.header-text a
+{
+    color: #818181;
+}
+/* Main Section 1 */
+.program-main-section-1
+{
+    margin-bottom: 200px;
+}
+.accordion-item
+{
+    border: none !important;
+    margin-bottom: 20px !important;
+}
+.accordion-button
+{
+    border-radius: 11px;
+    border-bottom: none !important;
+}
+.accordion-header
+{
+    border: 1px solid #7070703D;
+    border-radius: 11px;
+}
+.item-1
+{
+    border-top-left-radius: 11px !important;
+    border-top-right-radius: 11px !important;
+}
+.item-5
+{
+    border-bottom-left-radius: 11px !important;
+    border-bottom-right-radius: 11px !important;
+}
+.accordion-item .accordion-body
+{
+    border: none !important;
+}
+
+.accordion-item h2 button
+{
+    font-family: Satoshi-Medium;
+    font-size: 28px;
+    color: #07070780;
+}
+.accordion-body
+{
+    border: none;
+}
+.accordion-item h2 button:not(.collapsed)
+{
+    color: #070707;
+    background-color: transparent;
+    border: none;
+}
+.accordion-button:focus
+{
+    box-shadow: none;
+}
+.accordion-item h2 button:not(.collapsed)::after{
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' %3F%3E%3Csvg viewBox='0 0 384 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23070707' d='M192 384c-8.188 0-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L192 306.8l137.4-137.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-160 160C208.4 380.9 200.2 384 192 384z'/%3E%3C/svg%3E") !important;
+}
+.accordion-button::after
+{
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' %3F%3E%3Csvg viewBox='0 0 384 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23818181' d='M192 384c-8.188 0-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L192 306.8l137.4-137.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-160 160C208.4 380.9 200.2 384 192 384z'/%3E%3C/svg%3E") !important;
+}
+.accordion-body p
+{
+    font-family: Satoshi-Regular;
+    font-size: 16px;
+    color: #707070;
+}
+.program-main-section-1 .program-side-card{
+    border: none;
+    border-radius: 36px;
+    position: relative;
+    top: -150px;
+}
+.program-main-section-1 .program-side-card .box .card-body .img{
+    float: left;
+    width: 30%;
+    padding-top: 3.8%;
+    text-align: center;
+}
+.program-main-section-1 .program-side-card .box .card-body .card-detail{
+    padding-left: 60px !important;
+}
+.program-main-section-1 .program-side-card{
+    width: 400px;
+}
+.program-main-section-1 .program-side-card .box{
+    transition: all 0.3s ease;
+    box-shadow: 0px 25px 70px #00000014;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 36px;
+    position: relative;
+    z-index: 1;
+}
+.program-main-section-1 .program-side-card:hover{
+    position: relative;
+    z-index: 1;
+}
+.program-main-section-1 .program-side-card:hover .box {
+    position: relative;
+    z-index: 1;
+}
+.program-main-section-1 .program-side-card .card-title{
+    font-family: Satoshi-Medium;
+    font-size: 21px;
+    color: #07070780;
+}
+.program-main-section-1 .program-side-card .card-text{
+    font-family: Satoshi-Medium;
+    font-size: 28px;
+}
+.card-btn{
+    transition: all 0.2s ease;
+    visibility: hidden;
+    margin-top: -30px;
+    text-align: center;
+    background-color: #202e61;
+    position: relative;
+    z-index: 0;
+    border-bottom-left-radius: 36px;
+    border-bottom-right-radius: 36px;
+    font-family: Satoshi-Medium;
+    font-size: 36px;
+}
+.program-main-section-1 .program-side-card:hover .card-btn{
+    padding-top: 45px;
+    padding-bottom: 20px;
+    visibility: visible;
+    position: relative;
+    z-index: 0;
+}
+.program-main-section-1 .card-btn a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.program-main-section-1 .program-side-card .box:hover .card-btn{
+    visibility: visible;
+    padding-top: 50px;
+    position: relative;
+    z-index: 0;
+}
+/* Main Section 2 */
+.program-main-section-2 .programs-heading
+{
+    font-family: Satoshi-Black;
+    font-size: 42px;
+    color: #070707;
+}
+.program-main-section-2 .programs-text
+{
+    font-family: Satoshi-Regular;
+    font-size: 24px;
+    color: #818181;
+    margin-bottom: 60px;
+}
+.program-main-section-2 .card
+{
+    border-radius: 24px;
+    height: 168px;
+}
+.program-main-section-2 .card .card-body .card-text
+{
+    font-family: Satoshi-Medium;
+    font-size: 20px;
+    color: #202e61;
+}
+.program-main-section-2 .card .links a{
+    text-decoration: none;
+}
+.program-main-section-2 .card .links .fee:hover{
+    text-decoration: none;
+    color: #070707;
+}
+.program-main-section-2 .card .links .fee-heading:hover{
+    text-decoration: none;
+    color: #a8892f;
+}
+.fee-heading
+{
+    font-family: Satoshi-Medium;
+    font-size: 15px;
+    color: #a8892f;
+}
+.fee{
+    text-decoration: none;
+    font-family: Satoshi-Medium;
+    font-size: 20px;
+    color: #070707;
+}
+.title{
+    height: 80px;
+    overflow: hidden;
+    /* height: fit-content; */
+    /* margin-bottom: 10%; */
+}
+.links{
+    /* position: absolute;
+    bottom: 0;
+    width: 100%;
+    bottom: 10px; */
+}
+.w-50{
+    float: left;
+    width: 50%;
+    /* margin-top: 5%; */
+}
+.w-51{
+    float: right;
+    width: 50%;
+    /* margin-top: 5%; */
+}
+/* .links{
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+} */
+@media only screen and (min-width:1400px)
+{
+    .header-heading
+    {
+        font-size: 54px;
+    }
+    .program-main-section-2 .card .card-text{
+        font-size: 19px !important;
+    }
+}
+@media only screen and (max-width:1399px)
+{
+    .header-heading
+    {
+        font-size: 46px;
+    }
+    .program-main-section-1 .program-side-card .card-title{
+        font-size: 18px;
+    }
+    .program-main-section-1 .program-side-card .card-text{
+        font-size: 20px;
+    }
+    .card-btn a
+    {
+        font-size: 32px;
+    }
+    .header-text{
+        font-size: 24px;
+    }
+}
+@media only screen and (max-width:1299px){
+    .program-main-section-1 .program-side-card{
+        width: 350px;
+    }
+}
+@media only screen and (max-width:1199px)
+{
+    .program-header-section-2 .container
+    {
+        height: 400px;
+    }
+    .header-heading
+    {
+        font-size: 39px;
+    }
+    .header-text,
+    .accordion-item h2 button
+    {
+        font-size: 20px;
+    }
+    .program-main-section-1 .program-side-card .card-title
+    {
+        font-size: 16px;
+    }
+    .program-main-section-1 .program-side-card .card-text
+    {
+        font-size: 21px;
+    }
+    .card-btn a
+    {
+        font-size: 28px;
+    }
+    .program-main-section-1 .program-side-card{
+        width: 320px;
+    }
+    
+}
+@media only screen and (max-width:1099px){
+    .program-main-section-1 .program-side-card{
+        width: 290px;
+    }
+}
+@media only screen and (max-width:991px)
+{
+    .program-header-section-2 .container
+    {
+        height: 350px;
+    }
+    .header-heading
+    {
+        font-size: 29px;
+    }
+    .accordion-item h2 button
+    {
+        font-size: 22px;
+    }
+    .header-text{
+        font-size: 14px;
+    }
+    .program-main-section-1 .program-side-card .card-title
+    {
+        font-size: 14px;
+    }
+    .program-main-section-1 .program-side-card .card-text
+    {
+        font-size: 17px;
+    }
+    .card-btn a
+    {
+        font-size: 24px;
+    }
+    .program-main-section-2 .card
+    {
+        height: 190px;
+    }
+}
+@media only screen and (max-width:936px){
+    .program-main-section-1 .program-side-card{
+        width: 270px;
+    }
+}
+@media only screen and (min-width:768px) and (max-width:910px){
+    .program-main-section-1 .program-side-card{
+        width: 220px;
+    }
+    .program-main-section-1 .program-side-card .card-title
+    {
+        font-size: 13px !important;
+    }
+    .program-main-section-1 .program-side-card .card-text
+    {
+        font-size: 16px !important;
+    }
+}
+/* @media only screen and (min-width:768px) and (max-width:878px){
+    .main-section-1 .card{
+        width: 280px;
+    }
+} */
+@media only screen and (max-width:767px)
+{
+    .program-header-section-2 .container
+    {
+        height: 300px;
+    }
+    .header-heading
+    {
+        font-size: 22px;
+    }
+    .header-text,
+    .accordion-item h2 button
+    {
+        font-size: 18px;
+    }
+    .header-text img
+    {
+        width: 50px;
+    }
+    .accordion-body p
+    {
+        font-size: 14px;
+    }
+    .program-main-section-1 .program-side-card .card-title
+    {
+        font-size: 20px !important;
+    }
+    .program-main-section-1 .program-side-card .card-text
+    {
+        font-size: 26px !important;
+    }
+    .card-btn a
+    {
+        font-size: 42px;
+    }
+    .program-main-section-1 .program-side-card{
+        width: 100%;
+    }
+    
+    .program-side-card{
+        margin-top: 200px !important;
+    }
+
+    .program-main-section-1{
+        margin-bottom: 0px !important;
+    }
+}
+@media only screen and (max-width:560px)
+{
+    .header-heading
+    {
+        font-size: 21px;
+    }
+    .header-text,
+    .accordion-item h2 button
+    {
+        font-size: 18px;
+    }
+}
+@media only screen and (max-width:535px)
+{
+    .header-heading
+    {
+        font-size: 20px;
+    }
+    .header-text,
+    .accordion-item h2 button
+    {
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width:511px)
+{
+    .header-heading
+    {
+        font-size: 19px;
+    }
+    .header-text,
+    .accordion-item h2 button
+    {
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width:493px){
+    .program-main-section-2 .card-1 .card-body .card-text{
+        font-size: 18px !important;
+    }
+}
+@media only screen and (max-width:487px)
+{
+    .header-heading
+    {
+        font-size: 18px;
+    }
+    .header-text
+    {
+        font-size: 14px;
+    }
+    .program-main-section-1 .program-side-card .card-title{
+        font-size: 18px !important;
+    }
+    .program-main-section-1 .program-side-card .card-text{
+        font-size: 22px !important;
+    }
+    .programs-heading{
+        font-size: 36px !important;
+    }
+}
+
+@media only screen and (max-width:462px)
+{
+    .header-heading
+    {
+        font-size: 17px;
+    }
+    .card-btn a{
+        font-size: 28px !important;
+    }
+    .programs-heading{
+        font-size: 30px !important;
+    }
+    .programs-text{
+        font-size: 18px !important;
+    }
+}
+@media only screen and (max-width:431px)
+{
+    .header-heading
+    {
+        font-size: 16px;
+    }
+    .header-text
+    {
+        font-size: 13px;
+    }
+}
+@media only screen and (max-width:407px)
+{
+    .header-heading
+    {
+        font-size: 15px;
+    }
+    .header-text
+    {
+        font-size: 12px;
+    }
+    .cards-button a
+    {
+        font-size: 36px;
+    }
+    .program-main-section-2 .card .card-body .card-text
+    {
+        font-size: 16px !important;
+    }
+    .program-main-section-2 .card .card-body a,
+    .program-main-section-2 .card .card-body a
+    {
+        font-size: 16px;
+    }
+    .program-main-section-2 .card .card-body a span,
+    .program-main-section-2 .card .card-body a span
+    {
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width:383px)
+{
+    .header-text
+    {
+        font-size: 11px;
+    }
+    .program-main-section-1 .program-side-card .card-title
+    {
+        font-size: 16px;
+    }
+    .program-main-section-1 .program-side-card .card-text
+    {
+        font-size: 21px;
+    }
+    .programs-heading{
+        font-size: 18px !important;
+    }
+}
+@media only screen and (max-width:383px)
+{
+    .header-text
+    {
+        font-size: 10px;
+    }
+    .cards-button a
+    {
+        font-size: 26px;
+    }
+    .programs-heading
+    {
+        font-size: 36px !important;
+    }
+}
+@media only screen and (max-width:375px){
+    .program-main-section-1 .program-side-card .card-title{
+        font-size: 14px !important;
+    }
+    .program-main-section-1 .program-side-card .card-text{
+        font-size: 16px !important; 
+    }
+    .program-header-section-2{
+        padding-top: 50px;
+    }
+}
+@media only screen and (max-width:340px)
+{
+    .program-main-section-2 .card .card-body .card-text
+    {
+        font-size: 16px;
+    }
+    .program-main-section-2 .card .card-body .link-1 a,
+    .program-main-section-2 .card .card-body .link-2 a
+    {
+        font-size: 15px;
+    }
+    .program-main-section-2 .card .card-body .link-1 a span,
+    .program-main-section-2 .card .card-body .link-2 a span
+    {
+        font-size: 11px;
+    }
+}
+
+
+
+@media only screen and (min-width:1900px)
+{
+    .container{
+        max-width: 1600px !important;
+    }
+}

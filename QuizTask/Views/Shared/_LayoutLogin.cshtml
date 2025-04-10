@@ -1,0 +1,102 @@
+﻿@{
+    ViewData["Title"] = "_LayoutLogin";
+}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- OWL CAROUSEL CDN  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous"
+          referrerpolicy="no-referrer" />
+    <!--CSS LINKS  -->
+    <link rel="stylesheet" href="~/study-abroad/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/study-abroad/css/index.css">
+    <!-- FONTAWESOME CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- JQUERY CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="~/study-abroad/css/footer.css">
+    <title>Home Page</title>
+</head>
+
+<body>
+    <div class="container-fluid fixed-top p-0">
+        <!-- TOP NAVBAR START  -->
+        <div class="container-fluid navbar-top">
+            <div class="container">
+                <div class="row" style="display:flex;align-items: center;">
+                    <div class="col-lg-2 col-md-2 col-sm-12 col-12 navbar-logo top-nav-img">
+                        @* <img src="~/study-abroad/img/logo@2x.png" class="logo-img"> *@
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-12 col-12"></div>
+                    <div class="col-lg-7 col-md-7 col-sm-12 col-12 top-nav-detail" style="display: flex;justify-content: end;align-items: center;">
+                        @*<p style="margin-left: 0px;" class="number"><i class="fa-solid fa-phone"></i>&nbsp; (761)302-3732</p>*@
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    @RenderBody();
+
+    <!-- JS LINKS -->
+    <script src="~/study-abroad/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="~/study-abroad/js/owl.js"></script>
+    @RenderSection("Js", required: false)
+    @RenderSection("Scripts", required: false)
+</body>
+
+</html>
+<script>
+    $(document).ready(function () {
+            $("#toggle").click(function () {
+                var elem = $("#toggle").text();
+                if (elem == "Read More") {
+                    //Stuff to do when btn is in the read more state
+                    $("#toggle").text("Read Less");
+                    $("#text").slideDown();
+                } else {
+                    //Stuff to do when btn is in the read less state
+                    $("#toggle").text("Read More");
+                    $("#text").slideUp();
+                }
+            });
+        });
+        // SECOND SECTION
+        $(document).ready(function () {
+            $("#toggle1").click(function () {
+                var elem = $("#toggle1").text();
+                if (elem == "Read More") {
+                    //Stuff to do when btn is in the read more state
+                    $("#toggle1").text("Read Less");
+                    $("#text1").slideDown();
+                } else {
+                    //Stuff to do when btn is in the read less state
+                    $("#toggle1").text("Read More");
+                    $("#text1").slideUp();
+                }
+            });
+        });
+        // THIRD SECTION
+        $(document).ready(function () {
+            $("#toggle2").click(function () {
+                var elem = $("#toggle2").text();
+                if (elem == "Read More") {
+                    //Stuff to do when btn is in the read more state
+                    $("#toggle2").text("Read Less");
+                    $("#text2").slideDown();
+                } else {
+                    //Stuff to do when btn is in the read less state
+                    $("#toggle2").text("Read More");
+                    $("#text2").slideUp();
+                }
+            });
+        });</script>

@@ -1,0 +1,1002 @@
+@import url('https://fonts.cdnfonts.com/css/satoshi');
+.bg-search{
+    background-image: url(../img/Akbar\ 02102.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.serch-program{
+    display: flex;
+    justify-content: center;
+}
+.serch-program h1{
+    padding-top: 300px;
+    padding-bottom: 300px;
+    font: var(--unnamed-font-style-normal) normal bold 58px/67px Satoshi;
+    color: var(--unnamed-color-202e61);
+    text-align: center;
+    font: normal normal bold 58px/67px Satoshi;
+    letter-spacing: 0px;
+    color: #202E61;
+}
+.input-search .form-control{
+    height: 80px!important;
+    font-family: 'Satoshi', sans-serif;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+.input-search .inpu{
+  border-bottom-left-radius: 18px;
+  border-top-left-radius: 18px;
+}
+.input-search button{
+    width: 218px;
+    background: var(--unnamed-color-202e61) 0% 0% no-repeat padding-box;
+    background: #202E61 0% 0% no-repeat padding-box;
+    border-radius: 0px 18px 18px 0px;
+    opacity: 1;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Satoshi', sans-serif;
+}
+
+ul { list-style-type: none; }
+
+a {
+  color: #b63b4d;
+  text-decoration: none;
+}
+
+
+/** =======================
+ * Contenedor Principal
+ ===========================*/
+
+ ul.accordion {
+  list-style-type: none;
+  padding: 0px;
+ }
+
+
+.accordion {
+  width: 100%;
+  background: #FFF;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.accordion .link {
+  cursor: pointer;
+  display: block;
+  padding: 15px 15px 15px 25px;
+  /* color: #4D4D4D; */
+  font: normal normal medium 25px/81px Satoshi;
+letter-spacing: 0px;
+color: #000000;
+  
+  font-weight: 700;
+  position: relative;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  height: 65px;
+  align-items: center;
+    justify-content: left;
+    display: flex;
+}
+
+.accordion li:last-child .link { 
+    border-bottom: 0;
+    
+ }
+ .accordion li{
+  border: 1px solid #70707080; 
+border-radius: 18px ;
+ }
+ .accordion li.li-1{
+    /* border: 1px solid #70707080; */
+border-radius: 18px ;
+ }
+ .accordion li.li-2{
+    border-radius: 18px 18px 0px 0px ;
+ }
+ .accordion li.li-3{
+   
+    border-radius: 0px 0px 18px 18px ;
+ }
+
+.accordion li span.material-symbols-outlined {
+  position: absolute;
+  top: 16px;
+  left: 12px;
+  font-size: 19px;
+  color: #000000; 
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+
+
+}
+
+.accordion li i.fa-chevron-down {
+  position: absolute;
+  right: 25px;
+  left: auto;
+  font-size: 19px;
+  top: 24px;
+}
+
+.accordion li.open  { 
+    
+  border: 2px solid #213889;
+   
+}
+.accordion li .slide-drop { 
+    display: none;
+   
+}
+.accordion li .slide-drop .checkbox-div .form-check label{ 
+    font-size: 15px;
+   color: #818181;
+}
+.accordion li.open .link {
+    color: #000000;
+    
+    }
+    .accordion li .link {
+    color: #202E61;
+    
+    }
+.accordion li.open i.fa-chevron-down { 
+    color: #202E61;
+     
+}
+
+.accordion li.open i.fa-chevron-down {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+/**
+ * Submenu
+ -----------------------------*/
+
+
+.submenu {
+  display: none;
+  /* background: white; */
+  font-size: 14px;
+}
+
+/* .submenu li { border-bottom: 1px solid #4b4a5e; } */
+
+.submenu a {
+  display: block;
+  text-decoration: none;
+  color: #d9d9d9;
+  padding: 12px;
+  padding-left: 42px;
+  -webkit-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+.submenu a:hover {
+  /* background: none; */
+  color: #FFF;
+}
+.accordion .slide-drop label{
+    font: normal normal normal 15px/15px Satoshi;
+    letter-spacing: 0px;
+    color: #ab8a2ddb;
+    width: 100%;
+    opacity: 1;
+}
+.accordion .slide-drop .form-select{
+    border: 1px solid #7070703D;
+    border-radius: 11px;
+    font: normal normal normal 16px/25px Roboto;
+    font-family: Roboto;
+    letter-spacing: 0px;
+    color: #070707;
+}
+.accordion .slide-drop label.campus-city span.material-symbols-outlined{
+  position: relative;
+    float: right;
+    color: #818181;
+    font-size: 14px;
+    margin-right: 20px;
+    margin-top: -14px;
+}
+.accordion .slide-drop .form-check-input[type=checkbox] {
+    border-radius: 0.25em;
+    position: relative;
+    top: 1px;
+}
+.accordion .slide-drop  .form-check label{
+    font: normal normal normal 12px/15px Satoshi;
+    letter-spacing: 0px;
+    color: #818181;
+    width: 100%;
+}
+.accordion .slide-drop .form-check label span.material-symbols-outlined{
+    position: relative;
+    float: right;
+    color: #818181;
+    font-size: 15px;
+    margin-right: 20px;
+    margin-top: -14px;
+}
+.accordion .slide-drop  .btn-eli-filter{
+    background: #202E61 0% 0% no-repeat padding-box;
+    border-radius: 11px;
+    font: normal normal 100 13px/45px Satoshi;
+    letter-spacing: 0px;
+    color: #ffffffc9;
+    width: 95%;
+    align-items: center;
+}
+.accordion .slide-drop  .btn-eli-filter:hover{
+    color: #FFFFFF;
+}
+.accordion .slide-drop  label.intake-status span.material-symbols-outlined{
+    position: relative;
+    float: right;
+    color: #818181;
+    font-size: 14px;
+    margin-right: 20px;
+    margin-top: -14px;
+}
+.accordion .slide-drop  .form-last-text{
+    text-align: left;
+font: normal normal normal 13px/18px Satoshi;
+letter-spacing: 0px;
+color: #818181;
+}
+.accordion .slide-drop  .tuition-fee-div{
+    display: flex;
+    width: 100%;
+    position: relative;
+    left: 5px;
+    
+}
+.accordion .slide-drop  .tuition-fee-div .form-check{
+   position: relative;
+   right: 40px;
+   bottom: 6px;
+    margin-right: auto;
+    display: inline;
+    width: 100%;
+ 
+    
+}
+.accordion .slide-drop  .tuition-fee-div .form-check label{
+    color: #070707 !important;
+    opacity: 1;
+    font: normal normal normal 15px/15px Satoshi;
+}
+.accordion .slide-drop  .tuition-fee{
+    display: inline;
+    font: normal normal normal 16px/15px Satoshi;
+    letter-spacing: 0px;
+    color: #818181;
+    width: 100%;
+    color: #070707;
+    opacity: 1;
+}
+
+
+/* Range Slider Css start */
+                                    
+[slider] {
+  position: relative;
+  height: 14px;
+  border-radius: 10px;
+  text-align: left;
+  margin: 30px 0 35px 0;
+}
+
+[slider] > div {
+  position: absolute;
+  left: 13px;
+  right: 15px;
+  height: 14px;
+}
+
+[slider] > div > [inverse-left] {
+  position: absolute;
+  left: 0;
+  height: 5px;
+  border-radius: 10px;
+  background-color: #CCC;
+  margin: 0 7px;
+}
+
+[slider] > div > [inverse-right] {
+  position: absolute;
+  right: 0;
+  height: 5px;
+  border-radius: 10px;
+  background-color: #CCC;
+  margin: 0 7px;
+}
+
+[slider] > div > [range] {
+  position: absolute;
+  left: 0;
+  height: 5px;
+  border-radius: 14px;
+  background-color: #070707;
+}
+
+[slider] > div > [thumb] {
+  position: absolute;
+  top: -7px;
+  z-index: 2;
+  height: 22px;
+  width: 22px;
+  text-align: left;
+  margin-left: -11px;
+  cursor: pointer;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
+  background-color: #A8892F;
+  border-radius: 50%;
+  outline: none;
+}
+
+[slider] > input[type=range] {
+  position: absolute;
+  pointer-events: none;
+  -webkit-appearance: none;
+  z-index: 3;
+  height: 14px;
+  top: -2px;
+  width: 100%;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  -moz-opacity: 0;
+  -khtml-opacity: 0;
+  opacity: 0;
+}
+
+div[slider] > input[type=range]::-ms-track {
+  -webkit-appearance: none;
+  background: transparent;
+  color: transparent;
+}
+
+div[slider] > input[type=range]::-moz-range-track {
+  -moz-appearance: none;
+  background: transparent;
+  color: transparent;
+}
+
+div[slider] > input[type=range]:focus::-webkit-slider-runnable-track {
+  background: transparent;
+  border: transparent;
+}
+
+div[slider] > input[type=range]:focus {
+  outline: none;
+}
+
+div[slider] > input[type=range]::-ms-thumb {
+  pointer-events: all;
+  width: 22px;
+  height: 22px;
+  border-radius: 0px;
+  border: 0 none;
+  background: #A8892F;
+}
+
+div[slider] > input[type=range]::-moz-range-thumb {
+  pointer-events: all;
+  width: 22px;
+  height: 22px;
+  border-radius: 0px;
+  border: 0 none;
+  background: #A8892F;
+}
+
+div[slider] > input[type=range]::-webkit-slider-thumb {
+  pointer-events: all;
+  width: 22px;
+  height: 22px;
+  border-radius: 0px;
+  border: 0 none;
+  background: #A8892F;
+  -webkit-appearance: none;
+}
+
+div[slider] > input[type=range]::-ms-fill-lower {
+  background: transparent;
+  border: 0 none;
+}
+
+div[slider] > input[type=range]::-ms-fill-upper {
+  background: transparent;
+  border: 0 none;
+}
+
+div[slider] > input[type=range]::-ms-tooltip {
+  display: none;
+}
+
+[slider] > div > [sign] {
+  opacity: 1;
+  position: absolute;
+  margin-left: -11px;
+  top: -29px;
+  z-index:3;
+  background-color: none;
+  color: #202E61;
+  width: 22px;
+  height: 22px;
+  border-radius: 22px;
+  -webkit-border-radius: 22px;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  text-align: center;
+}
+
+[slider] > div > [sign]:after {
+  position: absolute;
+  content: '';
+  left: 0;
+  border-radius: 16px;
+  top: 19px;
+  border-left: 14px solid transparent;
+  border-right: 14px solid transparent;
+  border-top-width: 16px;
+  
+}
+
+[slider] > div > [sign] > span {
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+[slider]:hover > div > [sign] {
+  opacity: 1;
+}
+/* Range Slider css End */
+
+
+.accordion .slide-drop  .btn-apply-filter{
+    background: #202E61 0% 0% no-repeat padding-box;
+    border-radius: 11px;
+    font: normal normal 100 16px/45px Satoshi;
+    letter-spacing: 0px;
+    color: #ffffffc9;
+    width: 45%;
+}
+.accordion .slide-drop  .btn-apply-filter:hover{
+    color: #FFFFFF;
+}
+
+
+.accordion .slide-drop  .btn-clear-filter{
+    
+    border: 1px solid #202E61;
+    border-radius: 11px;
+    font: normal normal 100 16px/45px Satoshi;
+    letter-spacing: 0px;
+    color: #202E61;
+    width: 45%;
+}
+.accordion .slide-drop  .btn-clear-filter:hover{
+    color: #ffffffc9;
+    background: #202e61ef 0% 0% no-repeat padding-box;
+}
+
+@media(max-width:1024px){
+  .accordion .slide-drop .Post-graduation-div label span.material-symbols-outlined {
+    margin-top: -28px;
+  }
+}
+  
+
+
+
+
+
+
+@media (max-width:1200px) and (min-width:991px){
+  .accordion .slide-drop  .btn-apply-filter{
+  
+    font: normal normal 100 13px/45px Satoshi;
+   
+}
+.accordion .slide-drop .btn-clear-filter{
+    
+    
+    font: normal normal 100 13px/45px Satoshi;
+  
+}
+
+.accordion .slide-drop .tuition-fee-div .form-check{
+   right: 30px;
+ 
+}
+.accordion .slide-drop .tuition-fee-div .form-check label{
+    font: normal normal normal 11px/15px Satoshi;
+}
+.accordion .slide-drop .tuition-fee{
+    font: normal normal normal 13px/15px Satoshi;
+    
+}
+}
+
+@media (max-width:991px) and (min-width:768px){
+  .accordion .slide-drop  .form-check-input[type=checkbox] {
+    top: 0px;
+}
+.accordion .slide-drop .form-check label{
+    font: normal normal normal 9px/15px Satoshi;
+    position: relative;
+    top: 2px;
+    right: 2px;
+    
+}
+
+.accordion .slide-drop .direct-admission-div label span.material-symbols-outlined {
+    margin-top: -28px;
+  }
+.accordion .slide-drop .Post-graduation-div label span.material-symbols-outlined {
+    
+    margin-right: 10px;
+  }
+.accordion .link{
+  font-size: 15px;
+}
+.accordion .slide-drop .btn-eli-filter{
+    background: #202E61 0% 0% no-repeat padding-box;
+    border-radius: 11px;
+    font: normal normal 100 10px/36px Satoshi;
+    letter-spacing: 0px;
+    color: #ffffffa6;
+    width: 100%;
+}
+
+.accordion .slide-drop .btn-apply-filter{
+  
+    width: 100%;
+ 
+}
+.accordion .slide-drop .btn-clear-filter{
+  
+    margin-bottom: 10px;
+  
+  width: 100%;
+
+}
+
+.accordion .slide-drop   .tuition-fee-div{
+    /* display: flex; */
+    flex-wrap: wrap;
+}
+.accordion .slide-drop .tuition-fee-div .form-check{
+  right: 5px;
+  display: block;
+  top: 5px;
+}
+.accordion .slide-drop .tuition-fee-div .form-check label{
+    position: relative;
+    bottom: 2px;
+}
+
+}
+
+@media (max-width:767px){
+  .accordion .slide-drop .Post-graduation-div label span.material-symbols-outlined {
+    margin-top: -15px;
+  }
+}
+@media (max-width:768px){
+  .accordion .slide-drop .Post-graduation-div label span.material-symbols-outlined {
+    margin-top: -29px;
+  }
+}
+@media (max-width:480px){
+  .accordion .slide-drop .Post-graduation-div label span.material-symbols-outlined {
+    margin-top: -15px;
+  }
+}
+@media (max-width:320px){
+  .accordion .slide-drop .Post-graduation-div label span.material-symbols-outlined {
+    margin-top: -15px;
+    margin-right: 10px;
+  }
+}
+
+
+
+@media (max-width:378px){
+  .accordion .slide-drop   .btn-apply-filter{
+  
+  width: 100%;
+ 
+}
+.accordion .slide-drop .btn-clear-filter{
+  
+  margin-bottom: 10px;
+    width: 100%;
+
+}
+.accordion .slide-drop .tuition-fee-div{
+    display: flex;
+    flex-wrap: wrap;
+}
+.accordion .slide-drop .tuition-fee-div .form-check{
+  right: 5px;
+  display: block;
+}
+
+}
+@media (max-width:365px){
+  .accordion .slide-drop .Post-graduation-div label span.material-symbols-outlined {
+    margin-top: -30px;
+}
+.accordion .slide-drop .Post-graduation-div label{
+  width: 99%;
+}
+}
+@media (max-width:319px){
+  .accordion .slide-drop .form-check label span.material-symbols-outlined{
+    margin-top: -29px;
+  }
+}
+
+
+
+
+
+@media (max-width:1200px) and (min-width:991px){
+    .btn-apply-filter{
+  
+    font: normal normal 100 13px/45px Satoshi;
+   
+}
+.btn-clear-filter{
+    
+    
+    font: normal normal 100 13px/45px Satoshi;
+  
+}
+
+.tuition-fee-div .form-check{
+   right: 30px;
+ 
+}
+.tuition-fee-div .form-check label{
+    font: normal normal normal 11px/15px Satoshi;
+}
+.tuition-fee{
+    font: normal normal normal 13px/15px Satoshi;
+    
+}
+}
+@media (max-width:1024px){
+    label{
+        width: 90%;
+    }
+}
+@media (max-width:991px) and (min-width:768px){
+    .form-check-input[type=checkbox] {
+    top: 0px;
+}
+.form-check label{
+    font: normal normal normal 9px/15px Satoshi;
+    position: relative;
+    top: 2px;
+    right: 2px;
+    
+}
+.form-check label i{
+    
+  margin-top: -27px;
+    position: relative;
+    left: 27px;
+
+}
+.accordion .link{
+  font-size: 15px;
+}
+.btn-eli-filter{
+    background: #202E61 0% 0% no-repeat padding-box;
+    border-radius: 11px;
+    font: normal normal 100 10px/36px Satoshi;
+    letter-spacing: 0px;
+    color: #ffffffa6;
+    width: 100%;
+}
+
+.btn-apply-filter{
+  
+    width: 100%;
+ 
+}
+.btn-clear-filter{
+  
+    margin-bottom: 10px;
+  
+  width: 100%;
+
+}
+.tuition-fee-div{
+    display: flex;
+    flex-wrap: wrap;
+}
+.tuition-fee-div .form-check{
+  right: 5px;
+  display: block;
+  top: 5px;
+}
+.tuition-fee-div .form-check label{
+    position: relative;
+    bottom: 2px;
+}
+
+}
+@media (max-width:991px){
+    label{
+        width: 100%;
+    }
+}
+@media (max-width: 480px){
+    .input-search .form-control {
+        height: 68px!important;
+        border-radius: 20px;
+        font-family: 'Satoshi', sans-serif;
+    }
+}
+@media (max-width:375px){
+    .btn-apply-filter{
+  width: 100%;
+}
+
+.btn-clear-filter{
+  
+  margin-bottom: 10px;
+    width: 100%;
+
+}
+.tuition-fee-div{
+    display: flex;
+    flex-wrap: wrap;
+}
+.tuition-fee-div .form-check{
+  right: 5px;
+  display: block;
+}
+}
+@media (max-width:768px){
+    .btn-apply {
+        background-color: #202e61;
+        color: white;
+        width: 95px!important;
+        height: 45px;
+    }
+    .btn-view{
+      background-color: white;
+      color: #202e61;
+      width: 95px;
+      height: 45px;
+      border: 1px solid #202e61;
+      float: right;
+      border-radius: 12px;
+      opacity: 1;
+    }
+}
+
+
+.nav-tabs{
+    border-bottom: none;
+}
+.inpu{
+    border-radius: 18px 0px 0px 18px;
+}
+.input-search button:hover{
+    width: 218px;
+    background: var(--unnamed-color-202e61) 0% 0% no-repeat padding-box;
+    background: #202E61 0% 0% no-repeat padding-box;
+    border-radius: 0px 18px 18px 0px;
+    opacity: 1;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.button-tab{
+    border-top: none!important;
+    border-left: none!important;
+    border-bottom: none!important;
+    border-right: none!important;
+    color: #818181!important;
+    font-family: 'Satoshi', sans-serif;
+    font-size: 23px;
+}
+.button-tab:focus{
+    border-bottom: 5px solid #202E61!important;
+    color: #202E61!important;
+}
+.select-for .form-select{
+    height: 50px;
+    border: 1px solid #707070;
+    border-radius: 12px;
+    opacity: 1;
+}
+.svg-co{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icon-span span{
+    position: relative;
+    top: 5px;
+}
+.cheshire h3{
+    font: var(--unnamed-font-style-normal) normal bold 36px/39px Satoshi;
+    color: var(--unnamed-color-202e61);
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 0px;
+    color: #202E61;
+}
+.cheshiree h3{
+  font: var(--unnamed-font-style-normal) normal bold 36px/39px Satoshi;
+  color: var(--unnamed-color-202e61);
+  font-size: 26px;
+  font-weight: 600;
+  letter-spacing: 0px;
+  color: #202E61;
+}
+.icon-span a{
+    text-decoration: none;
+    font: var(--unnamed-font-style-normal) normal medium var(--unnamed-font-size-18)/31px Satoshi;
+    color: var(--unnamed-color-070707);
+    text-align: left;
+    font: normal normal medium 18px/31px Satoshi;
+    letter-spacing: 0px;
+    font-size: 14px;
+    color: #070707;
+}
+.main-tab-co{
+    background: white;
+    border: 1px solid #7070703D;
+    border-radius: 36px;
+    padding: 15px;
+    padding-top: 35px;
+    padding-bottom: 15px;
+    height: auto;
+}
+.main-tab-co2{
+  background: white;
+  border: 1px solid #7070703D;
+  border-radius: 36px;
+  padding: 20px;
+  height: auto;
+}
+.main-tab-co2:hover{
+  background: white;
+  box-shadow: -12px 35px 90px #0000000f;
+  border: 1px solid transparent;
+  border-radius: 36px;
+  padding: 20px;
+  height: auto;
+}
+.main-tab-co:hover{
+  background: white;
+  box-shadow: -12px 35px 90px #0000000f;
+  border: 1px solid transparent;
+  border-radius: 36px;
+  padding: 15px;
+  padding-top: 35px;
+  padding-bottom: 15px;
+  height: auto;
+}
+.main-tab-co-1{
+    background: white;
+    border: 1px solid #7070703D;
+    border-radius: 36px;
+    margin-top: 50px;
+    border-radius: 36px;
+    padding: 15px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    height: auto;
+}
+.main-tab-co-1:hover{
+  background: white;
+  border: 1px solid #7070703D;
+  border-radius: 36px;
+  margin-top: 50px;
+  border-radius: 36px;
+  padding: 15px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  height: auto;
+}
+.tuition span{
+    color: #a8892f;
+}
+.level .t-level{
+    font-size: 19px;
+    letter-spacing: 0px;
+    color: #202E61;
+    font-weight: 500;
+    opacity: 1;
+}
+.btn-apply{
+    background-color: #202e61;
+    color: white;
+    width: 120px;
+    height: 45px;
+    float: right;
+    border-radius: 12px;
+    opacity: 1;
+}
+.btn-view{
+  background-color: white;
+  color: #202e61;
+  width: 150px;
+  height: 45px;
+  border: 1px solid #202e61;
+  float: right;
+  border-radius: 12px;
+  opacity: 1;
+}
+.level-main{
+    border: 1px solid #7070703D;
+    border-radius: 24px;
+    margin-top: 0px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.level-main-1{
+    border: 1px solid #7070703D;
+    border-radius: 24px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-apply:hover{
+    background-color: #202e61;
+    color: white;
+    width: 120px;
+    height: 45px;
+}
+.tabOneImg{
+  width: 87px;
+  height: 87px;
+  border-radius: 100%;
+}
+@media (max-width: 1024px){
+  /* .tabOneImg {
+    width: 100%;
+} */
+}
+@media (max-width: 768px){
+  .tabOneImg {
+    /* width: 30%; */
+    margin-bottom: 5%;
+}
+}
+
+
+@media only screen and (min-width:1900px)
+{
+    .container{
+        max-width: 1600px !important;
+    }
+}

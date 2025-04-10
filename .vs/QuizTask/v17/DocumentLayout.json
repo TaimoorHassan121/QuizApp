@@ -1,0 +1,134 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\QuizTask\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6B4599CF-A168-465E-B94B-3DA06D194F58}|QuizTask\\QuizTask.csproj|d:\\quiztask\\quiztask\\services\\tokenexpireservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B4599CF-A168-465E-B94B-3DA06D194F58}|QuizTask\\QuizTask.csproj|solutionrelative:quiztask\\services\\tokenexpireservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B4599CF-A168-465E-B94B-3DA06D194F58}|QuizTask\\QuizTask.csproj|d:\\quiztask\\quiztask\\models\\adminuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B4599CF-A168-465E-B94B-3DA06D194F58}|QuizTask\\QuizTask.csproj|solutionrelative:quiztask\\models\\adminuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B4599CF-A168-465E-B94B-3DA06D194F58}|QuizTask\\QuizTask.csproj|d:\\quiztask\\quiztask\\controllers\\adminuserscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B4599CF-A168-465E-B94B-3DA06D194F58}|QuizTask\\QuizTask.csproj|solutionrelative:quiztask\\controllers\\adminuserscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B4599CF-A168-465E-B94B-3DA06D194F58}|QuizTask\\QuizTask.csproj|d:\\quiztask\\quiztask\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B4599CF-A168-465E-B94B-3DA06D194F58}|QuizTask\\QuizTask.csproj|solutionrelative:quiztask\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B4599CF-A168-465E-B94B-3DA06D194F58}|QuizTask\\QuizTask.csproj|d:\\quiztask\\quiztask\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{6B4599CF-A168-465E-B94B-3DA06D194F58}|QuizTask\\QuizTask.csproj|solutionrelative:quiztask\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B4599CF-A168-465E-B94B-3DA06D194F58}|QuizTask\\QuizTask.csproj|d:\\quiztask\\quiztask\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B4599CF-A168-465E-B94B-3DA06D194F58}|QuizTask\\QuizTask.csproj|solutionrelative:quiztask\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B4599CF-A168-465E-B94B-3DA06D194F58}|QuizTask\\QuizTask.csproj|d:\\quiztask\\quiztask\\areas\\identity\\pages\\account\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B4599CF-A168-465E-B94B-3DA06D194F58}|QuizTask\\QuizTask.csproj|solutionrelative:quiztask\\areas\\identity\\pages\\account\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TokenExpireService.cs",
+              "DocumentMoniker": "D:\\QuizTask\\QuizTask\\Services\\TokenExpireService.cs",
+              "RelativeDocumentMoniker": "QuizTask\\Services\\TokenExpireService.cs",
+              "ToolTip": "D:\\QuizTask\\QuizTask\\Services\\TokenExpireService.cs",
+              "RelativeToolTip": "QuizTask\\Services\\TokenExpireService.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-09T05:05:54.872Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AdminUsersController.cs",
+              "DocumentMoniker": "D:\\QuizTask\\QuizTask\\Controllers\\AdminUsersController.cs",
+              "RelativeDocumentMoniker": "QuizTask\\Controllers\\AdminUsersController.cs",
+              "ToolTip": "D:\\QuizTask\\QuizTask\\Controllers\\AdminUsersController.cs",
+              "RelativeToolTip": "QuizTask\\Controllers\\AdminUsersController.cs",
+              "ViewState": "AgIAAEgAAAAAAAAAAAA7wFwAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T05:35:06.539Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AdminUser.cs",
+              "DocumentMoniker": "D:\\QuizTask\\QuizTask\\Models\\AdminUser.cs",
+              "RelativeDocumentMoniker": "QuizTask\\Models\\AdminUser.cs",
+              "ToolTip": "D:\\QuizTask\\QuizTask\\Models\\AdminUser.cs",
+              "RelativeToolTip": "QuizTask\\Models\\AdminUser.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAQwBUAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T05:23:37.827Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "D:\\QuizTask\\QuizTask\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "QuizTask\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "D:\\QuizTask\\QuizTask\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "QuizTask\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T11:29:13.931Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\QuizTask\\QuizTask\\appsettings.json",
+              "RelativeDocumentMoniker": "QuizTask\\appsettings.json",
+              "ToolTip": "D:\\QuizTask\\QuizTask\\appsettings.json",
+              "RelativeToolTip": "QuizTask\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-03T11:21:16.083Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\QuizTask\\QuizTask\\Program.cs",
+              "RelativeDocumentMoniker": "QuizTask\\Program.cs",
+              "ToolTip": "D:\\QuizTask\\QuizTask\\Program.cs",
+              "RelativeToolTip": "QuizTask\\Program.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T11:21:14.977Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Login.cshtml.cs",
+              "DocumentMoniker": "D:\\QuizTask\\QuizTask\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "RelativeDocumentMoniker": "QuizTask\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "ToolTip": "D:\\QuizTask\\QuizTask\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "RelativeToolTip": "QuizTask\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "ViewState": "AgIAAGoAAAAAAAAAAAAowHgAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-28T09:02:03.08Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

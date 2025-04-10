@@ -1,0 +1,170 @@
+﻿@model QuizTask.Models.AdminUser
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "_LayoutAdmin";
+
+}
+
+<div class="content-header row">
+    <div class="content-header-left col-12 mb-2 mt-1">
+        <div class="breadcrumbs-top">
+            <h5 class="content-header-title float-left pr-1 mb-0">Admin User</h5>
+            <div class="breadcrumb-wrapper d-none d-sm-block">
+                <ol class="breadcrumb p-0 mb-0 pl-1">
+                    <li class="breadcrumb-item">
+                        <a href="index"><i class="bx bx-home-alt"></i></a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="index">Index</a>
+                    </li>
+                    <li class="breadcrumb-item active">
+                        <a>Create</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="content-body">
+    <!-- Basic Vertical form layout section start -->
+    <section id="basic-vertical-layouts">
+        <div class="row match-height">
+
+            <div class="col-md-12 col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h5>Add Users</h5>
+                    </div>
+                    <div class="card-body">
+                        <form asp-action="Create">
+                            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                            <div class="row col-12">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="control-label">Reg. No</label>
+                                        <input asp-for="User_Reg_No" class="form-control" />
+                                        <span asp-validation-for="User_Reg_No" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="control-label">Name</label>
+                                        <input asp-for="User_Name" class="form-control" autocomplete="off" readonly onfocus="this.removeAttribute('readonly');" />
+                                        <span asp-validation-for="User_Reg_No" class="text-danger"></span>
+                                    </div>
+                                </div>
+                            </div>                           
+
+                            <div class="row col-12">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="control-label"> Email</label>
+                                        <input asp-for="User_Email" class="form-control" id="emailAddress" autocomplete="off" readonly onfocus="this.removeAttribute('readonly');" />
+                                        <span asp-validation-for="User_Email" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="control-label">Password</label>
+                                        <input asp-for="User_Passward" class="form-control" minlength="6" maxlength="15" autocomplete="off" readonly onfocus="this.removeAttribute('readonly');" />
+                                        <span asp-validation-for="User_Passward" class="text-danger"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row col-12">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="control-label"> Role</label>
+                                        <input asp-for="Role" class="form-control"  value="Admin"/>
+                                        <span asp-validation-for="Role" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="control-label">Mobile No</label>
+                                        <input asp-for="Mobile_No" class="form-control" id="mobileNo" />
+                                        <span asp-validation-for="Mobile_No" class="text-danger"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row col-12">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="control-label"> Date</label>
+                                        <input type="datetime-local" asp-for="User_Date" class="form-control" />
+                                        <span asp-validation-for="User_Date" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="control-label">
+                                            Status
+                                        </label>
+                                        <select asp-for="User_Status" class="form-control">
+                                            <option value="True">True</option>
+                                            <option value="False">False</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="form-group">
+                                <input type="submit" value="Create" class="btn btn-primary" />
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Basic Vertical form layout section end -->
+
+
+
+</div>
+
+
+<script src="~/js/currentdatetime.js"></script>
+
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+
+
+<script>
+    const mobileInput = document.getElementById("mobileNo");
+
+    mobileInput.addEventListener("input", function () {
+    let value = mobileInput.value.replace(/\D/g, ""); // Remove non-numeric characters
+
+    // Ensure it starts with '03'
+    if (!value.startsWith("03")) {
+    value = "03";
+    }
+    // Apply formatting: 03XX-XXXXXXX
+    if (value.length > 4) value = value.slice(0, 4) + "-" + value.slice(4);
+    if (value.length > 12) value = value.slice(0, 12); // Max length: 12 (11 digits + 1 dash)
+
+    mobileInput.value = value;
+    });
+
+
+
+    function validateEmail(email) {
+    return /^[a-zA-Z0-9._%+-]+@@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(email);
+    }
+
+    const emailInput = document.getElementById("emailAddress");
+
+    emailInput.addEventListener("input", function () {
+    if (!validateEmail(this.value)) {
+    this.style.border = "2px solid red";
+    } else {
+    this.style.border = "2px solid green";
+    }
+    });
+</script>

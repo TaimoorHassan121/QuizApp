@@ -1,0 +1,99 @@
+﻿@model QuizTask.Models.AdminUser
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "_LayoutAdmin";
+}
+
+<div class="content-header row">
+    <div class="content-header-left col-12 mb-2 mt-1">
+        <div class="breadcrumbs-top">
+            <h5 class="content-header-title float-left pr-1 mb-0">AdminUser </h5>
+            <div class="breadcrumb-wrapper d-none d-sm-block">
+                <ol class="breadcrumb p-0 mb-0 pl-1">
+                    <li class="breadcrumb-item">
+                        <a href="index"><i class="bx bx-home-alt"></i></a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="index">Index</a>
+                    </li>
+                    <li class="breadcrumb-item active">
+                        <a>Detail</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="content-body">
+    <section id="basic-vertical-layouts">
+        <div class="row match-height">
+            <div class="col-md-12 col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h5>Career Level</h5>
+                    </div>
+                    <div class="card-body">
+                        <dl class="row">
+                            <dt class="col-sm-2">
+                                Reg.No
+                            </dt>
+                            <dd class="col-sm-10">
+                                @Html.DisplayFor(model => model.User_Reg_No)
+                            </dd>
+                            <dt class="col-sm-2">
+                                Name
+                            </dt>
+                            <dd class="col-sm-10">
+                                @Html.DisplayFor(model => model.User_Name)
+                            </dd>
+                            <dt class="col-sm-2">
+                                @Html.DisplayNameFor(model => model.Role)
+                            </dt>
+                            <dd class="col-sm-10">
+                                @Html.DisplayFor(model => model.Role)
+                            </dd>
+                            <dt class="col-sm-2">
+                                Mobile No
+                            </dt>
+                            <dd class="col-sm-10">
+                                @Html.DisplayFor(model => model.Mobile_No)
+                            </dd>
+                            <dt class="col-sm-2">
+                                Email
+                            </dt>
+                            <dd class="col-sm-10">
+                                @Html.DisplayFor(model => model.User_Email)
+                            </dd>
+                            @*     <dt class="col-sm-2">
+                                @Html.DisplayNameFor(model => model.User_Passward)
+                            </dt>
+                            <dd class="col-sm-10">
+                                @Html.DisplayFor(model => model.User_Passward)
+                            </dd> *@
+                            <dt class="col-sm-2">
+                                Status
+                            </dt>
+                            <dd class="col-sm-10">
+                                @Html.DisplayFor(model => model.User_Status)
+                            </dd>
+                            <dt class="col-sm-2">
+                                Date
+                            </dt>
+                            <dd class="col-sm-10">
+                                @Html.DisplayFor(model => model.User_Date)
+                            </dd>
+                        </dl>
+                        <div>
+                            <a asp-action="Edit" class="btn btn-info" asp-route-id="@Model?.UserId">Edit</a> |
+                            <a asp-action="Index">Back to List</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+</div>
+

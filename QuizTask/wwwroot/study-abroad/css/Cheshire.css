@@ -1,0 +1,191 @@
+/* header css start */
+.header-bg{
+    /* background-image: url(../img/Mask\ Group\ 14\(1\).png); */
+    background: linear-gradient(
+        to bottom,
+        rgba(0,0,0, 0),
+        rgba(0,0,0, 100)
+      ),url(../img/Mask\ Group\ 14\(1\).png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: 100px;
+    width: 100%;
+    height: auto;
+}
+.Cheshire-text img{
+    width: 100%;
+    margin-top: 400px;
+}
+.Cheshire-text h1{
+    margin-top: 400px;
+    font-size: 45px;
+    font-weight: bold;
+    font-family: 'Satoshi', sans-serif;
+    color: white;
+}
+.main-svg{
+    float: left;
+}
+.svg svg{
+    width: 100%!important;
+}
+.svg-text p{
+    color: #FFFFFFA3;
+    font-size: 19px;
+    margin-bottom: 0px;
+}
+
+/* header css end  */
+
+
+/* All Programns css Start */
+.programs-main{
+    margin-top: 100px;
+}
+.programs-text h1{
+    color:#070707;
+    font-style: normal;
+    /* font: var(--unnamed-font-style-normal) normal 900 42px/56px Satoshi; */
+    font-family: 'Satoshi', sans-serif;
+    font-weight: 700;
+    font-size: 42px;
+}
+.programs-text p{
+    color: #818181;
+    font-family: 'Satoshi', sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+}
+.level-text{
+    display: flex;
+    border-radius: 24px;
+    border: 1px solid #7070703D;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 25px;
+    margin-bottom: 40px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.level-text:hover{
+    border-radius: 24px;
+    box-shadow: 0px 16px 72px -46px #000000;
+    border: 1px solid transparent;
+}
+/* .level-row{
+    margin-top: 15px;
+} */
+.technology-text h4{
+    font-weight: bold;
+    font-family: 'Satoshi', sans-serif;
+    color: #070707;
+    margin-top: 20px;
+    font-size: 27px;
+}
+.application-fee p{
+    color: #070707;
+    font-family: 'Satoshi', sans-serif;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+.application{
+    color: #A8892F;
+    font-weight: normal;
+}
+.btn-apply{
+    width: 70%;
+    border-radius: 12px;
+    background-color: #202e61;
+    color: white;
+    height: 50px;
+    text-transform: uppercase;
+    font-family: 'Satoshi', sans-serif;
+    font-weight: normal;
+    float: right;
+}
+.btn-apply:hover{
+    margin-top: 30px;
+    width: 70%;
+    border-radius: 12px;
+    background-color: #202e61;
+    color: white;
+    height: 50px;
+}
+
+/* All Programs css End  */
+
+
+/* Load More css Start */
+   .load-more-btn{
+    margin-top: 100px;
+    background-color: white;
+    border: 1px solid #70707080;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+   .circle-main a{
+    letter-spacing: 4.2px;
+color: #070707;
+text-transform: uppercase;
+text-decoration: none;
+   }
+
+/* Load More css end */
+
+
+
+
+/* media quries  */
+@media(max-width:768px){
+    .Cheshire-text h1{
+        font-size: 24px;
+    }
+    .technology-text h4{
+        margin-top: 20px;
+        font-size: 20px;
+    }
+}
+@media (max-width: 425px) {
+    .Cheshire-img{
+        display: flex;
+        justify-content: center;
+    }
+    .Cheshire-text img{
+        width: 50%;
+    }
+	.Cheshire-text h1{
+        margin-top: 20px;
+        font-size: 30px;
+    }
+    .application-fee{
+        margin-top: 30px;
+    }
+    .btn-apply{
+        float: left;
+    }
+    .apply-btn-col{
+        justify-content: flex-start!important;
+        padding-top: 20px;
+    }
+    .Cheshire-text img{
+        margin-top: 120px;
+    }
+    .Cheshire-text h1{
+        font-size: 20px;
+        text-align: center;
+    }
+    .Cheshire-img{
+        margin-top: 80px;
+    }
+}
+@media only screen and (min-width:1900px)
+{
+    .container{
+        max-width: 1600px !important;
+    }
+}

@@ -1,0 +1,85 @@
+﻿@model IEnumerable<QuizTask.Models.QuizQuestionAnswer>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "_LayoutAdmin";
+}
+
+<div class="content-body">
+    <!-- Zero configuration table -->
+    <section id="basic-datatable">
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h5>All Question Details</h5>
+                        <a style="float:right" class="btn btn-primary" asp-action="Create">
+                            <i class="bx bx-plus-medical"></i>
+                        </a>
+                    </div>
+                    <div class="card-body card-dashboard">
+
+                        <div class="table-responsive">
+                            <table class="table zero-configuration">
+                                <thead>
+                                    <tr>
+                                        <th>QuizQno</th>
+                                        <th>Question</th>
+                                        <th>Answer</th>
+                                        <th>Option</th>
+                                        <th>CareerLevel</th>
+                                        <th>QuizStatus</th>
+                                        <th>QuizDate</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var item in Model)
+                                    {
+                                        <tr>
+                                            <td>@item.QuizQno</td>
+                                            <td>@item.Question</td>
+                                            <td>@item.Answer</td>
+                                            <td>
+                                                <ul>
+                                                @foreach (var option in item.QOptions)
+                                                {
+                                                    <li>@option.Options @* (Option #@option.OptionNo) *@</li>
+                                                }
+                                                </ul>
+                                            </td>
+                                            <td>@item.CareerLevel?.CareerName</td>
+                                            <td>@item.QuizDate</td>
+
+                                            <td>
+                                                @if (item.QuizStatus == true)
+                                                {
+                                                    @Html.Raw("Active")
+                                                }
+                                                else
+                                                {
+                                                    @Html.Raw("Deactive")
+                                                }
+                                            </td>
+
+                                            <td>
+                                                <a asp-action="Edit" class="btn btn-success  btn-sm" asp-route-id="@item.QuizID">Edit</a>
+                                                <a asp-action="Details" class="btn btn-info  btn-sm" asp-route-id="@item.QuizID">Details</a>
+                                                <a asp-action="Delete" class="btn btn-danger btn-sm" asp-route-id="@item.QuizID">Delete</a>
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/ Zero configuration table -->
+
+</div>
+
+

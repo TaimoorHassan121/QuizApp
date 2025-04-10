@@ -1,0 +1,134 @@
+﻿@model QuizTask.Models.EmailDetail
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "_LayoutAdmin";
+}
+
+<div class="content-header row">
+    <div class="content-header-left col-12 mb-2 mt-1">
+        <div class="breadcrumbs-top">
+            <h5 class="content-header-title float-left pr-1 mb-0">Send Email</h5>
+            <div class="breadcrumb-wrapper d-none d-sm-block">
+                <ol class="breadcrumb p-0 mb-0 pl-1">
+                    <li class="breadcrumb-item">
+                        <a href="index"><i class="bx bx-home-alt"></i></a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="index">Index</a>
+                    </li>
+                    <li class="breadcrumb-item active">
+                        <a>Create</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="content-body">
+    <!-- Basic Vertical form layout section start -->
+    <section id="basic-vertical-layouts">
+        <div class="row match-height">
+
+            <div class="col-md-12 col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h5>Send E-Emai (You may send Link In Subject Or Body)</h5>
+                    </div>
+                    <div class="card-body">
+                        <form asp-action="Create">
+                            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                            <div class="row">
+
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="control-label">
+                                            Link ID/No
+                                        </label>
+                                        <label asp-for="TestLinkId" class="control-label"></label>
+                                        <select asp-for="TestLinkId" class="form-control" asp-items="ViewBag.TestLinkId" id="testLinkDropdown">
+                                            <option value="">Select Test Link</option>
+
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="control-label"> Candidate Name</label>
+                                        <input  class="form-control" id="candidateName" placeholder="Enter Career Name" readonly />
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="form-group">
+                                        <label class="control-label">Candidate Confirm E-Mail</label>
+                                        <input asp-for="Confirmed_Email" class="form-control" id="candidateEmail" />
+                                        <span asp-validation-for="Confirmed_Email" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label asp-for="Subject" class="control-label"></label>
+                                        <input asp-for="Subject" class="form-control" />
+                                        <span asp-validation-for="Subject" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label asp-for="body" class="control-label"></label>
+                                        <textarea asp-for="body" class="form-control" rows="10" id="emailbody"></textarea>
+                                        <span asp-validation-for="body" class="text-danger"></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="submit" value="Send Mail" class="btn btn-primary" />
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Basic Vertical form layout section end -->
+
+
+
+</div>
+
+<script>
+
+    
+
+    // var candidateName = LinkData.candidateName;
+
+    document.getElementById("testLinkDropdown").addEventListener("change", function () {
+
+        var testlinkId = this.value;
+        $.ajax({
+            url: '/EmailDetails/getTestLink?linkId='+testlinkId,  // Update with your actual controller name
+            type: 'GET',
+            success: function (data) {
+
+                var candiName = document.getElementById("candidateName");
+                var emailBody = document.getElementById("emailbody");
+                var candidateEmail = document.getElementById("candidateEmail");
+                var dataLink = data
+                candiName.value = dataLink.candidateDetail.name;
+                candidateEmail.value = dataLink.candidateDetail.candidate_Email;
+                emailBody.value = `Dear Candidate,\n\nBelow is Your Quiz Link:\n${dataLink.candidate_TestLink}`;
+
+
+            }
+        });
+
+
+
+
+
+
+
+        document.getElementById("candidateName").value = candidateName;
+    });
+</script>

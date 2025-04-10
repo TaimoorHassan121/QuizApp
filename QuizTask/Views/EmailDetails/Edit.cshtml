@@ -1,0 +1,56 @@
+﻿@model QuizTask.Models.EmailDetail
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>EmailDetail</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="EmailID" />
+            <div class="form-group">
+                <label asp-for="TestLinkId" class="control-label"></label>
+                <select asp-for="TestLinkId" class="form-control" asp-items="ViewBag.TestLinkId"></select>
+                <span asp-validation-for="TestLinkId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Confirmed_Email" class="control-label"></label>
+                <input asp-for="Confirmed_Email" class="form-control" />
+                <span asp-validation-for="Confirmed_Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Subject" class="control-label"></label>
+                <input asp-for="Subject" class="form-control" />
+                <span asp-validation-for="Subject" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="body" class="control-label"></label>
+                <input asp-for="body" class="form-control" />
+                <span asp-validation-for="body" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Created_Date" class="control-label"></label>
+                <input asp-for="Created_Date" class="form-control" />
+                <span asp-validation-for="Created_Date" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Created_By" class="control-label"></label>
+                <input asp-for="Created_By" class="form-control" />
+                <span asp-validation-for="Created_By" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

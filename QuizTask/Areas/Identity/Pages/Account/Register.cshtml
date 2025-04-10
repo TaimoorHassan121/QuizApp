@@ -1,0 +1,221 @@
+﻿@page
+@model RegisterModel
+@{
+    ViewData["Title"] = "Register";
+}
+
+<div class="content-header row my-5">
+    <div class="content-header-left col-12 mb-2 mt-1">
+        <div class="breadcrumbs-top">
+            <h5 class="content-header-title float-left pr-1 mb-0">Register Users (Admin)</h5>
+         
+        </div>
+    </div>
+</div>
+<div class="content-body">
+    <!-- Basic Vertical form layout section start -->
+    <section id="basic-vertical-layouts">
+        <div class="row match-height">
+
+            <div class="col-md-12 col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h5>Register User</h5>
+                    </div>
+                    <div class="card-body">
+                        <form id="registerForm" asp-route-returnUrl="@Model.ReturnUrl" method="post">
+                            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                            <div class="row col-12">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="control-label">Reg. No</label>
+                                        <input name="User_Reg_No" class="form-control" />
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="control-label">Name</label>
+                                        <input name="User_Name" class="form-control" readonly onfocus="this.removeAttribute('readonly');" autocomplete="off" />
+                                    </div>
+                                </div>
+                          
+
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="control-label"> Email</label>
+                                        <input asp-for="Input.Email" class="form-control" id="emailAddress" autocomplete="off" readonly onfocus="this.removeAttribute('readonly');" />
+                                        <span asp-validation-for="Input.Email" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="control-label">Password</label>
+                                        <input asp-for="Input.Password" class="form-control" minlength="6" maxlength="15" autocomplete="off" readonly onfocus="this.removeAttribute('readonly');" />
+                                        <span asp-validation-for="Input.Password" class="text-danger"></span>
+                                    </div>
+                                </div>
+                         
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                        <label class="control-label">Confirm Password</label>
+                                    <input  asp-for="Input.ConfirmPassword" class="form-control" minlength="6" maxlength="15"  autocomplete="off" readonly onfocus="this.removeAttribute('readonly');" />
+                                    <span asp-validation-for="Input.Password" class="text-danger"></span>
+                                </div>
+                            </div>
+                            
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="control-label"> Role</label>
+                                        <input name="Role" class="form-control" value="Admin" />
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="control-label">Mobile No</label>
+                                        <input name="Mobile_No" class="form-control" id="mobileNo" />
+                                    </div>
+                                </div>
+                          
+                          
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="control-label"> Date</label>
+                                        <input type="datetime-local" name="User_Date" class="form-control" />
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="control-label">
+                                            Status
+                                        </label>
+                                        <select name="User_Status" class="form-control">
+                                            <option value="True">True</option>
+                                            <option value="False">False</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="form-group mt-3">
+                                <input type="submit" value="Register" class="btn btn-primary" />
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Basic Vertical form layout section end -->
+
+
+
+</div>
+
+
+<script src="~/js/currentdatetime.js"></script>
+
+
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+
+
+<script>
+    const mobileInput = document.getElementById("mobileNo");
+
+    mobileInput.addEventListener("input", function () {
+    let value = mobileInput.value.replace(/\D/g, ""); // Remove non-numeric characters
+
+    // Ensure it starts with '03'
+    if (!value.startsWith("03")) {
+    value = "03";
+    }
+    // Apply formatting: 03XX-XXXXXXX
+    if (value.length > 4) value = value.slice(0, 4) + "-" + value.slice(4);
+    if (value.length > 12) value = value.slice(0, 12); // Max length: 12 (11 digits + 1 dash)
+
+    mobileInput.value = value;
+    });
+
+
+
+    function validateEmail(email) {
+    return /^[a-zA-Z0-9._%+-]+@@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(email);
+    }
+
+    const emailInput = document.getElementById("emailAddress");
+
+    emailInput.addEventListener("input", function () {
+    if (!validateEmail(this.value)) {
+    this.style.border = "2px solid red";
+    } else {
+    this.style.border = "2px solid green";
+    }
+    });
+</script>
+@* 
+<h1>@ViewData["Title"]</h1>
+
+<div class="row">
+    <div class="col-md-4">
+        <form id="registerForm" asp-route-returnUrl="@Model.ReturnUrl" method="post">
+            <h2>Create a new account.</h2>
+            <hr />
+            <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
+            <div class="form-floating mb-3">
+                <input asp-for="Input.Email" class="form-control" autocomplete="username" aria-required="true" placeholder="name@example.com" />
+                <label asp-for="Input.Email">Email</label>
+                <span asp-validation-for="Input.Email" class="text-danger"></span>
+            </div>
+            <div class="form-floating mb-3">
+                <input asp-for="Input.Password" class="form-control" autocomplete="new-password" aria-required="true" placeholder="password" />
+                <label asp-for="Input.Password">Password</label>
+                <span asp-validation-for="Input.Password" class="text-danger"></span>
+            </div>
+            <div class="form-floating mb-3">
+                <input asp-for="Input.ConfirmPassword" class="form-control" autocomplete="new-password" aria-required="true" placeholder="password" />
+                <label asp-for="Input.ConfirmPassword">Confirm Password</label>
+                <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
+            </div>
+            <button id="registerSubmit" type="submit" class="w-100 btn btn-lg btn-primary">Register</button>
+        </form>
+    </div>
+    <div class="col-md-6 col-md-offset-2">
+        <section>
+            <h3>Use another service to register.</h3>
+            <hr />
+            @{
+                if ((Model.ExternalLogins?.Count ?? 0) == 0)
+                {
+                    <div>
+                        <p>
+                            There are no external authentication services configured. See this <a href="https://go.microsoft.com/fwlink/?LinkID=532715">article
+                            about setting up this ASP.NET application to support logging in via external services</a>.
+                        </p>
+                    </div>
+                }
+                else
+                {
+                    <form id="external-account" asp-page="./ExternalLogin" asp-route-returnUrl="@Model.ReturnUrl" method="post" class="form-horizontal">
+                        <div>
+                            <p>
+                                @foreach (var provider in Model.ExternalLogins!)
+                                {
+                                    <button type="submit" class="btn btn-primary" name="provider" value="@provider.Name" title="Log in using your @provider.DisplayName account">@provider.DisplayName</button>
+                                }
+                            </p>
+                        </div>
+                    </form>
+                }
+            }
+        </section>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+} *@

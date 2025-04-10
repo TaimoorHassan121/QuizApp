@@ -1,0 +1,63 @@
+@import url('https://fonts.cdnfonts.com/css/satoshi');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Satoshi', sans-serif;
+}
+.navbar{
+     background-color: white!important;
+}
+.navbar-light .navbar-nav .nav-link{
+    color: #202E61;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+    color: #A8892F;
+}
+.navbar-light .navbar-nav .nav-link.active-link{
+    color: #A8892F;
+}
+.navbar-light .navbar-nav .nav-link.active-link:after{
+    content: '';
+    display: block;
+    width: 35%;
+    padding-top: 5px;
+    border-bottom: 2px solid #A8892F;
+}
+
+.navbar-light .navbar-nav .nav-login-btn{
+    border-radius: 10px;
+    background-color: #202E61;
+    border: none;
+    color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 400;
+}
+.navbar-light .navbar-nav .nav-login-btn:hover{
+    color: white;
+}
+.navbar-light .navbar-nav .nav-item{
+    padding-left: 22px;
+}
+
+@media (max-width: 1024px){
+    
+.navbar .navbar-brand img{
+    width: 100px;   
+}
+.navbar-light .navbar-nav .nav-item{
+    padding-left: 0px;
+}
+
+}
+@media (max-width: 768px){
+    .navbar-light .navbar-nav{
+        align-items: flex-start!important;
+    }
+    .navbar-light .navbar-nav .nav-item{
+        padding-left: 12px;
+    }
+}

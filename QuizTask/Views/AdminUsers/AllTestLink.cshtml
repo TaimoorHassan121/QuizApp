@@ -1,0 +1,133 @@
+﻿@model IEnumerable<QuizTask.Models.TestLink>
+@{
+    ViewData["Title"] = "AllTestLink";
+    Layout = "_LayoutAdmin";
+}
+
+<!-- BEGIN: Content-->
+<style>
+    .round {
+        border-radius: 4rem;
+    }
+
+    .th {
+        background-color: #04AF49;
+        color: white;
+    }
+
+    .table thead th {
+        color: white;
+        border-top: none;
+        vertical-align: middle;
+        font-size: .8rem;
+        letter-spacing: 1px;
+    }
+
+    .table thead th {
+        vertical-align: bottom;
+        border-bottom: 2px solid #04AF49;
+        BACKGROUND-COLOR: #04AF49;
+        /* COLOR: WHITE; */
+        color: white;
+    }
+
+
+    .table.dataTable thead .sorting:before, .table.dataTable thead .sorting:after, .table.dataTable thead .sorting_asc:before, .table.dataTable thead .sorting_asc:after, .table.dataTable thead .sorting_desc:before, .table.dataTable thead .sorting_desc:after, .table.dataTable thead .sorting_desc_disabled:before, .table.dataTable thead .sorting_desc_disabled:after {
+        font-family: "boxicons";
+        color: white;
+    }
+</style>
+
+<!-- BEGIN: Content-->
+
+<div class="content-body">
+
+    <!-- Zero configuration table -->
+    <section id="basic-datatable">
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>All AllTestLink</h3>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card" style="background-color: aliceblue;">
+                                <div class="card-body">
+                                    <form class="form" asp-action="AllTestLink">
+                                        <div class="form-body">
+                                            <div class="row">
+                                            
+
+
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label class="control-label">
+                                                            Status
+                                                        </label>
+                                                        <select name="status" class="form-control">
+                                                            <option value="">Select Option</option>
+                                                            <option value="Pending">Pending</option>
+                                                            <option value="Complete">Complete</option>
+                                                            <option value="Expire">Expire</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+
+                                               
+
+
+                                                <div class="col-12 d-flex justify-content-end">
+                                                    <input type="submit" value="Search" class="btn btn-primary mr-1" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body card-dashboard">
+                        <div class="table-responsive">
+                            <table class="table zero-configuration">
+                                <thead style="width:100%">
+                                    <tr>
+                                        <th>Candidate Name</th>
+                                        <th>Candidate Link</th>
+                                        <th>Start Date</th>
+                                        <th>End Date</th>
+                                        <th>Status</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var item in Model)
+                                    {
+                                        <tr>
+                                            <td>@item.CandidateDetail.Name</td>
+                                            <td><a href="@item.Candidate_TestLink" class="nav-link">https://localhost:7283/startQuiz?candidate="@item.CandidateDetail.Name"</a></td>
+                                            <td>@item.StartDate</td>
+                                            <td>@item.EndDate</td>
+                                            <td>@item.Status</td>
+
+                                            <td>
+                                                <a asp-action="Edit" class="btn btn-success  btn-sm" asp-route-id="@item.TestLinkId">Edit</a>
+                                                <a asp-action="Details" class="btn btn-info  btn-sm" asp-route-id="@item.TestLinkId">Details</a>
+                                                <a asp-action="Delete" class="btn btn-danger btn-sm" asp-route-id="@item.TestLinkId">Delete</a>
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/ Zero configuration table -->
+
+
+</div>
+
+<!-- END: Content-->

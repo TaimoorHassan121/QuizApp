@@ -1,0 +1,299 @@
+@import url('https://fonts.cdnfonts.com/css/satoshi');
+body {
+    font-family: 'Satoshi', sans-serif;
+}
+
+.login-form {
+    margin-bottom: 80px;
+}
+
+.color h2 {
+    font-family: 'Satoshi', sans-serif;
+    font-size: 58px;
+    letter-spacing: 0px;
+    color: #202E61;
+    text-transform: uppercase;
+    width: 176px;
+    height: 50px;
+    font-weight: 500;
+    opacity: 1;
+    margin-bottom: 10%;
+    margin-top: 2%;
+}
+
+.login-header-section {
+    margin-top: 150px;
+}
+
+.cards {
+    border: none;
+    height: 320px;
+}
+
+.forms-inputs {
+    margin-top: -4px;
+    position: relative;
+}
+
+.forms-inputs span {
+    color: #2E3B6B;
+    position: absolute;
+    top: -18px;
+    left: 10px;
+    background-color: #fff;
+    padding: 5px 10px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.forms-inputs input {
+    width: 100%;
+    height: 70px;
+    border: 1px solid #202E6163;
+    border-radius: 18px;
+    padding: 20px;
+    letter-spacing: 0px;
+    color: #202E61;
+    opacity: 1;
+}
+
+.forms-inputs textarea {
+    border-color: #2E3B6B !important;
+}
+
+.bitton {
+    width: 100%;
+}
+
+.login-button {
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 10px;
+    height: 65px;
+    width: 105%;
+    position: relative;
+    right: 24px;
+    background-color: #2E3B6B;
+}
+
+.forms-inputs input:focus {
+    box-shadow: none;
+    outline: none;
+    border: 1px solid#2E3B6B;
+}
+
+.success-data {
+    display: flex;
+    flex-direction: column;
+}
+
+.bxs-badge-check {
+    font-size: 90px;
+}
+
+.form-check-input {
+    position: relative;
+    bottom: 15px;
+    border: 1px solid #949494;
+}
+
+.form-check-label {
+    position: relative;
+    bottom: 15px;
+}
+
+.ori {
+    margin-top: 0;
+    margin-bottom: -0.5rem;
+    display: flex;
+    justify-content: end;
+    font-size: 14px;
+    color: #1877f2;
+}
+
+.ori a {
+    color: #213889;
+}
+
+.border-space-text {
+    color: #070707;
+    letter-spacing: 0px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0px!important;
+}
+
+.social {
+    margin-bottom: 20px;
+    /* margin: 8px; */
+    width: 100%;
+    height: 70px;
+    border: 1px solid#E1E1E1;
+    border-radius: 15px;
+    font-size: 15px;
+    transition: 0.2s;
+    background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+}
+
+.orio {
+    margin: 14px;
+    width: 38px;
+    height: 38px;
+}
+
+.euro1 {
+    width: 20px;
+    height: 38px;
+    margin: 20px;
+}
+
+.para {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    color: #949494;
+    font-size: 18px;
+}
+
+.para a {
+    color: #202E61;
+}
+
+a {
+    text-decoration: none;
+}
+
+.oro {
+    font-size: 60px;
+    font-weight: 500;
+    top: 295px;
+    left: 277px;
+    width: 92%;
+    height: auto;
+    text-align: center;
+    letter-spacing: 0.72px;
+    opacity: 1;
+    color: #202E61;
+}
+
+.img-fluid {
+    width: 100%;
+    height: auto;
+}
+
+
+/* h1 {
+    width: 510px;
+    height: 155px;
+    text-align: center;
+    margin-left: 77px;
+} */
+
+.euro2 {
+    top: 80px;
+    left: 83px;
+    width: 206px;
+    height: 75px;
+    font: var(--unnamed-font-style-normal) normal 900 60px/80px Satoshi;
+    color: var(--unnamed-color-a8892f);
+    text-align: center;
+    font: normal normal 900 60px/80px Satoshi;
+    letter-spacing: 0.72px;
+    color: #A8892F;
+    text-transform: uppercase;
+}
+
+
+/* .euro3 { */
+
+
+/* width: 100%; */
+
+
+/* height: auto; */
+
+
+/* margin-left: -50px; */
+
+
+/* display: flex; */
+
+
+/* margin-top: -78px; */
+
+
+/* background-image: url(../img/Group\ 3465@2x.jpg); */
+
+
+/* background-repeat: no-repeat; */
+
+
+/* background-size: cover; */
+
+
+/* background-position: center; */
+
+
+/* opacity: 1; */
+
+
+/* } */
+
+@media (max-width: 1024px) {
+    .oro {
+        font-size: 40px;
+        width: 87%;
+    }
+    .euro2 {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .oro {
+        font-size: 28px;
+        width: 85%;
+    }
+    .euro2 {
+        font-size: 35px;
+    }
+    .color h2 {
+        font-size: 50px;
+    }
+}
+
+@media (max-width:425px) {
+    .oro {
+        font-size: 28px;
+        width: 62%;
+    }
+    .euro2 {
+        font-size: 27px;
+    }
+    .color h2 {
+        font-size: 40px;
+        margin-bottom: 3%;
+    }
+}
+
+@media (max-width: 375px) {
+    .oro {
+        width: 80%;
+    }
+}
+
+@media (max-width: 320px) {
+    .oro {
+        width: 85%;
+    }
+}
+
+
+@media only screen and (min-width:1900px)
+{
+    .container{
+        max-width: 1600px !important;
+    }
+}
